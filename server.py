@@ -6,7 +6,7 @@ port = 9090
 
 clients = []
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
 
 exits = False
